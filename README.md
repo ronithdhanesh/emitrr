@@ -1,4 +1,3 @@
-```markdown
 ### 🩺 Physician Notetaker
 
 An end-to-end **clinical NLP system** for medical transcription analysis, built to extract structured medical information, analyze patient sentiment and intent, and generate clinically readable notes from raw physician–patient conversations.
@@ -46,39 +45,39 @@ This mirrors how **production medical NLP systems** are actually built.
 ---
 
 ## 🗂️ Project Structure
-```
 
+```text
 physician-notetaker/
 │
 ├── data/
-│ ├── raw/
-│ │ └── sample_transcript.txt
-│ └── processed/
+│   ├── raw/
+│   │   └── sample_transcript.txt
+│   └── processed/
 │
 ├── src/
-│ ├── ingestion/
-│ │ └── parser.py
-│ ├── ner/
-│ │ └── medical_ner.py
-│ ├── summarization/
-│ │ ├── keywords.py
-│ │ ├── medical_summary.py
-│ │ └── report_builder.py
-│ ├── sentiment/
-│ │ ├── sentiment_classifier.py
-│ │ └── intent_detector.py
-│ ├── soap/
-│ │ └── soap_generator.py
-│ ├── utils/
-│ │ └── helpers.py
-│ └── pipeline.py
+│   ├── ingestion/
+│   │   └── parser.py
+│   ├── ner/
+│   │   └── medical_ner.py
+│   ├── summarization/
+│   │   ├── keywords.py
+│   │   ├── medical_summary.py
+│   │   └── report_builder.py
+│   ├── sentiment/
+│   │   ├── sentiment_classifier.py
+│   │   └── intent_detector.py
+│   ├── soap/
+│   │   └── soap_generator.py
+│   ├── utils/
+│   │   └── helpers.py
+│   └── pipeline.py
 │
 ├── Dockerfile
 ├── .dockerignore
 ├── requirements.txt
 └── README.md
 
-````
+```
 
 ---
 
@@ -90,17 +89,19 @@ physician-notetaker/
 Convert raw transcript text into structured dialogue turns.
 
 **Key Features:**
+
 - Speaker-aware parsing (Patient vs Physician)
 - Normalization of speaker labels
 - Noise-resistant parsing
 
 **Output Example:**
+
 ```json
 [
   { "speaker": "patient", "text": "I had neck and back pain" },
   { "speaker": "physician", "text": "Did you seek treatment?" }
 ]
-````
+```
 
 ---
 
