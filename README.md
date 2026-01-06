@@ -1,5 +1,5 @@
 ```markdown
-# 🩺 Physician Notetaker
+### 🩺 Physician Notetaker
 
 An end-to-end **clinical NLP system** for medical transcription analysis, built to extract structured medical information, analyze patient sentiment and intent, and generate clinically readable notes from raw physician–patient conversations.
 
