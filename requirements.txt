@@ -1,0 +1,10 @@
+spacy==3.8.2
+scispacy==0.5.4
+transformers==4.36.2
+torch>=2.0.0
+sentencepiece
+keybert
+scikit-learn
+pandas
+numpy
+tqdm
